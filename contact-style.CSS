@@ -6,7 +6,7 @@
 } */
 .background_contact{
     width: 100%;
-    height: 100%;
+    height: 76vh;
     max-height: 100%;
     margin: 0;
     padding: 0;
@@ -15,17 +15,33 @@
     background-repeat: no-repeat;
 }
 
+.heading{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 .center {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    /* height: 400px; */
     padding: 20px;
-    background-color: #ffffff;
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
 
+}
+.insta{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.or-text{
+    display: flex;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
 form {
     display: grid;
     gap: 10px;
@@ -48,11 +64,10 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #d28897;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -60,5 +75,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color:rgb(160, 71, 87);
 }
