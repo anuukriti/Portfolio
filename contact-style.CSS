@@ -17,6 +17,7 @@
       background-repeat: no-repeat;
   }
   .container{
+    margin-block-start: 10px;
     width: 85%;
     background: #fff;
     border-radius: 6px;
