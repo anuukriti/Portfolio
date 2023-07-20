@@ -3,69 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./contact-style.CSS"/>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- ----nav bar----- -->
-    <section id="navbar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary pt-3 pb-3 ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Kriteria</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="index.html">About</a>
-                  <a class="nav-link" href="work.html">Work</a>
-                  <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                  <a class="nav-link" href="#">Resume</a>
-                </div>
-              </div>
+    <div class="center">
+        <h1>Contact Me</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
             </div>
-          </nav>
-</section>
-<!-- --hero-- -->
-<section class="hero contact_bg">
-        <!-- <div class="container">
-            <h1 class="Heading  pt-1"><br>Lets have a talk</h1>
-            
-        </div> -->
-        <form>
-          <!-- Name input -->
-          <div class="form-outline mb-4">
-            <input type="text" id="form4Example1" class="form-control" />
-            <label class="form-label" for="form4Example1">Name</label>
-          </div>
-        
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="form4Example2" class="form-control" />
-            <label class="form-label" for="form4Example2">Email address</label>
-          </div>
-        
-          <!-- Message input -->
-          <div class="form-outline mb-4">
-            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-            <label class="form-label" for="form4Example3">Message</label>
-          </div>
-        
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-            <label class="form-check-label" for="form4Example4">
-              Send me a copy of this message
-            </label>
-          </div>
-        
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="sendMail()">Send Message</button>
+            </div>
         </form>
-</section>    
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
